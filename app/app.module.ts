@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { FincasPage} from '../pages/fincas/fincas';
+import { FincasProvider} from '../providers/fincas';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FincasPage} from '../pages/fincas/fincas';
     FincasPage,
   ],
   providers: [
+    FincasProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

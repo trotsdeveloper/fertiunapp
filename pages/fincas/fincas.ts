@@ -1,19 +1,20 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ViewController } from 'ionic-angular';
-import { HomePage } from '../home/home';
- 
+import { HomePage } from '../home/home'; 
+import { FincasProvider } from '../../providers/fincas';
+
 @IonicPage()
 @Component({
   selector: 'fincas',
   templateUrl: 'fincas.html',
 })
 export class FincasPage {
- 
-  constructor(public navCtrl: NavController){
+  fincas = [];
+  constructor(public navCtrl: NavController, public fincasService: FincasProvider) {
   }
  
   ionViewDidLoad() {
-    console.log('ionViewDidLoad OtherPage');
+    this.fincas = this.fincasService.getAll();
   }
  
   goBack() {

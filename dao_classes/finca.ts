@@ -1,4 +1,5 @@
 export class Finca {
+  image: string;
 	nombre: string;
 	departamento: string;
 	corregimiento: string;
