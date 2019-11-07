@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, ViewController } from 'ionic-angular';
 import { HomePage } from '../../home/home'; 
 import { FincasProvider } from '../../../providers/fincas';
+import { AddFincasPage} from '../addFincas/addFincas';
 
 @IonicPage()
 @Component({
@@ -17,6 +18,7 @@ export class FincasPage {
     this.fincas = this.fincasService.getAll();
   }
   add() {
+    this.navCtrl.push(AddFincasPage);
 
   }
   details(i) {

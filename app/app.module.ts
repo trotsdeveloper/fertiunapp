@@ -6,12 +6,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FincasPage} from '../pages/fincas/listarFincas/fincas';
 import { FincasProvider} from '../providers/fincas';
+import { AddFincasPage} from '../pages/fincas/addFincas/addFincas';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     FincasPage,
+    AddFincasPage,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +25,7 @@ import { FincasProvider} from '../providers/fincas';
     MyApp,
     HomePage,
     FincasPage,
+    AddFincasPage,
   ],
   providers: [
     FincasProvider,
