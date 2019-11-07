@@ -3,20 +3,14 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
-  template: `
-    <ion-header>
-      <ion-navbar>
-        <ion-title>Home</ion-title>
-      </ion-navbar>
-    </ion-header>
-
-    <ion-content padding>
-      Hello World
-    </ion-content>
-  `
+  templateUrl: 'home.html',
+  styleUrls: ['./home.scss']
 })
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
+  }
+  itemClick() {
+    console.log("Hi");
   }
 }
