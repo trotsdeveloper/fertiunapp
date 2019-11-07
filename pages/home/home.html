@@ -7,7 +7,7 @@
     <ion-content class="home-content" padding>
     <ion-grid>
       <ion-row>
-        <ion-col (click)="navigateFincas()">
+        <ion-col (click)="fincas()">
           <div align="center">
           <ion-avatar>
           <img src="https://i.ibb.co/PQZny3M/mis-fincas.png">
@@ -15,7 +15,7 @@
           <p>MIS FINCAS</p>  
           </div>               
         </ion-col>
-        <ion-col (click)="">
+        <ion-col (click)="analisisSuelos()">
           <div align="center">
           <ion-avatar>
           <img src="https://i.ibb.co/YtR1hYQ/analisis-suelos.png">
@@ -25,7 +25,7 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col>
+        <ion-col (click)="elSuelo()">
           <div align="center">
           <ion-avatar>
           <img src="https://i.ibb.co/SVHgZdw/el-suelo.png">
@@ -33,7 +33,7 @@
           <p>EL SUELO</p> 
           </div>
         </ion-col>
-        <ion-col>
+        <ion-col (click)="tiposRiesgo()">
           <div align="center">
           <ion-avatar>
           <img src="https://i.ibb.co/0t98kMv/tipos-riesgo.png">
@@ -43,7 +43,7 @@
         </ion-col>
       </ion-row>
       <ion-row>        
-        <ion-col>
+        <ion-col (click)="deficienciasNutricionales()">
           <div align="center">
           <ion-avatar>
           <img src="https://i.ibb.co/Ks3XQ8X/deficiencias-nutricionales.png">
@@ -51,7 +51,7 @@
           <p>DEFICIENCIAS <br> NUTRICIONALES</p>
           </div>
         </ion-col>
-        <ion-col>
+        <ion-col (click)="acercaNosotros()">
           <div align="center">
           <ion-avatar>
           <img src="https://i.ibb.co/sq0tpPQ/acerca-nosotros.png">
@@ -62,5 +62,3 @@
       </ion-row>
       </ion-grid>
     </ion-content>
-
-<img id="bgrimage" src="picture.png" alt="imagenotavailable">

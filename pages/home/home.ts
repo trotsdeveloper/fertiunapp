@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { FincasPage } from '../fincas/fincas'
 
 @Component({
   selector: 'page-home',
@@ -10,7 +11,30 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
   }
-  itemClick() {
-    console.log("Hi");
+  fincas() {
+    console.log("Fincas");
+    this.navCtrl.push(FincasPage);
   }
+  analisisSuelos() {
+    console.log("Analisis de suelos");
+  }
+  elSuelo() {
+    console.log("El suelo");
+  }
+
+  tiposRiesgo() {
+    console.log("Tipos de riesgo");
+  }
+
+  deficienciasNutricionales() {
+    console.log("Deficiencias nutricionales");
+  }
+
+  acercaNosotros() {
+    console.log("Acerca de nosotros");
+  }
+
+
+
+
 }
