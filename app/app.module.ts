@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
-import { FincasPage} from '../pages/fincas/fincas';
+import { FincasPage} from '../pages/fincas/listarFincas/fincas';
 import { FincasProvider} from '../providers/fincas';
 
 @NgModule({

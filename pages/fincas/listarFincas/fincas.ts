@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ViewController } from 'ionic-angular';
-import { HomePage } from '../home/home'; 
-import { FincasProvider } from '../../providers/fincas';
+import { HomePage } from '../../home/home'; 
+import { FincasProvider } from '../../../providers/fincas';
 
 @IonicPage()
 @Component({

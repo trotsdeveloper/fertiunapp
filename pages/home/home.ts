@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { FincasPage } from '../fincas/fincas'
+import { FincasPage } from '../fincas/listarFincas/fincas'
 
 @Component({
   selector: 'page-home',
