@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { FincasPage} from '../pages/fincas/listarFincas/fincas';
 import { FincasProvider} from '../providers/fincas';
 import { AddFincasPage} from '../pages/fincas/addFincas/addFincas';
+import { DetailsFincasPage} from '../pages/fincas/detailsFincas/detailsFincas';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AddFincasPage} from '../pages/fincas/addFincas/addFincas';
     HomePage,
     FincasPage,
     AddFincasPage,
+    DetailsFincasPage,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import { AddFincasPage} from '../pages/fincas/addFincas/addFincas';
     HomePage,
     FincasPage,
     AddFincasPage,
+    DetailsFincasPage,
   ],
   providers: [
     FincasProvider,

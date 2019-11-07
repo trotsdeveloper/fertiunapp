@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, ViewController } from 'ionic-angular';
 import {Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { FincasProvider } from '../../../providers/fincas';
 
+@IonicPage()
 @Component({
   selector: 'page-add-fincas',
   templateUrl: 'addFincas.html'
@@ -9,7 +11,7 @@ import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 export class AddFincasPage {
   private todo : FormGroup;
 
-  constructor(public navCtrl: NavController, private formBuilder: FormBuilder ) {
+  constructor(public navCtrl: NavController, private formBuilder: FormBuilder, public fincasService: FincasProvider ) {
     this.todo = this.formBuilder.group({
       nombre: ['', Validators.required],
       departamento: ['', Validators.required],
@@ -23,8 +25,9 @@ export class AddFincasPage {
     });
   }
   logForm(){
-    console.log(this.todo.value)
+    let finca = this.todo.value;
+    this.fincasService.add(finca);
+    console.log(finca);
+    this.navCtrl.pop();
   }
-
-
 }

@@ -3,6 +3,7 @@ import { IonicPage, NavController, ViewController } from 'ionic-angular';
 import { HomePage } from '../../home/home'; 
 import { FincasProvider } from '../../../providers/fincas';
 import { AddFincasPage} from '../addFincas/addFincas';
+import { DetailsFincasPage } from '../detailsFincas/detailsFincas';
 
 @IonicPage()
 @Component({
@@ -22,7 +23,9 @@ export class FincasPage {
 
   }
   details(i) {
-
+    this.navCtrl.push(DetailsFincasPage, {
+      index: i
+    });
   }
   update(i) {
 
