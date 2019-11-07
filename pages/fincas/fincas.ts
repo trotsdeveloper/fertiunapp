@@ -16,6 +16,18 @@ export class FincasPage {
   ionViewDidLoad() {
     this.fincas = this.fincasService.getAll();
   }
+  add() {
+
+  }
+  details(i) {
+
+  }
+  update(i) {
+
+  }
+  delete(i) {
+    
+  }
  
   goBack() {
     console.log("popping");

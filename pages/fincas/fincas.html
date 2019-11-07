@@ -1,10 +1,41 @@
-<ion-header> 
-  <ion-navbar>
-    <ion-title>Mis fincas</ion-title>
-  </ion-navbar>
+<ion-header>
+	<ion-navbar>
+		<ion-title>Fincas</ion-title>
+	</ion-navbar>
 </ion-header>
-  
 <ion-content padding>
-  This is the Second Component
-<button ion-button (click)='goBack()'>back</button>
- </ion-content>
+	<ion-item>
+		<button ion-button (click)="add()">
+			<pre>AGREGAR FINCA </pre> 
+			<ion-icon name="add"></ion-icon></button>
+	</ion-item>
+	<div padding>
+	<ion-grid>
+		<ion-item *ngFor="let finca of fincas; let i = index">
+      <ion-row>
+				<ion-col>
+					<div align="center">
+          <ion-avatar>
+          <img src="{{finca.imageUrl}}">
+          </ion-avatar> 
+          </div>  
+				</ion-col>
+				<ion-col>
+					{{ finca.nombre }}
+				</ion-col>
+    </ion-row>
+			<div class="item-note" item-end>
+        <button ion-button clear (click)="details(i)">
+					<ion-icon name="information"></ion-icon>
+				</button>
+				<button ion-button clear (click)="update(i)">
+					<ion-icon name="create"></ion-icon>
+				</button>
+				<button ion-button clear (click)="delete(i)">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+			</div>
+		</ion-item>
+	</ion-grid>
+	</div>
+</ion-content>
