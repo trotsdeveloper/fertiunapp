@@ -1,7 +1,7 @@
-export class Finca {
-  n: string;
-	nombre: string;
-	departamento: string;
+export class Lote {
+  cultivo: string;
+ variedad: string;
+	edad: string;
   municipio: string;
 	corregimiento: string;
 	vereda: string;
