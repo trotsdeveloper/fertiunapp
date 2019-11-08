@@ -8,7 +8,8 @@ import { FincasPage} from '../pages/fincas/listarFincas/fincas';
 import { FincasProvider} from '../providers/fincas';
 import { AddFincasPage} from '../pages/fincas/addFincas/addFincas';
 import { DetailsFincasPage} from '../pages/fincas/detailsFincas/detailsFincas';
-
+import { UpdateFincasPage} from '../pages/fincas/updateFincas/updateFincas';
+import { DeleteFincasPage} from '../pages/fincas/deleteFincas/deleteFincas';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { DetailsFincasPage} from '../pages/fincas/detailsFincas/detailsFincas';
     FincasPage,
     AddFincasPage,
     DetailsFincasPage,
+    UpdateFincasPage,
+    DeleteFincasPage,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,8 @@ import { DetailsFincasPage} from '../pages/fincas/detailsFincas/detailsFincas';
     FincasPage,
     AddFincasPage,
     DetailsFincasPage,
+    UpdateFincasPage,
+    DeleteFincasPage,
   ],
   providers: [
     FincasProvider,

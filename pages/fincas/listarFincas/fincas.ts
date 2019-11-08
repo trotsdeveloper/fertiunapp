@@ -4,6 +4,8 @@ import { HomePage } from '../../home/home';
 import { FincasProvider } from '../../../providers/fincas';
 import { AddFincasPage} from '../addFincas/addFincas';
 import { DetailsFincasPage } from '../detailsFincas/detailsFincas';
+import { UpdateFincasPage } from '../updateFincas/updateFincas';
+import { DeleteFincasPage } from '../deleteFincas/deleteFincas';
 
 @IonicPage()
 @Component({
@@ -28,9 +30,16 @@ export class FincasPage {
     });
   }
   update(i) {
+    this.navCtrl.push(UpdateFincasPage, {
+      index: i
+    });
 
   }
   delete(i) {
+    this.navCtrl.push(DeleteFincasPage, {
+      index: i,
+      name: this.fincas[i].name,
+    });
     
   }
  

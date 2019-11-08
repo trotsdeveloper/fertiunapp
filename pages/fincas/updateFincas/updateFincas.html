@@ -1,0 +1,69 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Actualizar fincas</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+<form [formGroup]="todo" (ngSubmit)="logForm()">
+  <ion-list>
+      <ion-item>
+        <ion-label>Nombre de la finca (*) </ion-label>
+        <ion-input type="text" formControlName="nombre" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Departamento (*) </ion-label>
+        <ion-input type="text" formControlName="departamento"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Municipio (*) </ion-label>
+        <ion-input type="text" formControlName="municipio"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Corregimiento (*) </ion-label>
+        <ion-input type="text" formControlName="corregimiento"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Vereda (*) </ion-label>
+        <ion-input type="text" formControlName="vereda"></ion-input>
+      </ion-item>
+
+       <ion-row radio-group formControlName="clima">
+        <ion-col>
+          <ion-item>
+            <ion-label>Frío</ion-label>
+            <ion-radio value="1"></ion-radio>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label>Templado</ion-label>
+            <ion-radio value="2"></ion-radio>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label>Cálido</ion-label>
+            <ion-radio value="3"></ion-radio>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+     <ion-item>
+        <ion-label>Altitud m.s.n.m </ion-label>
+        <ion-input type="number" formControlName="altitud"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Temperatura media (Celsius) </ion-label>
+        <ion-input type="number" formControlName="temperaturaMedia"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Precipitación media (mm) </ion-label>
+        <ion-input type="number" formControlName="precipitacionMedia"></ion-input>
+      </ion-item>
+
+      </ion-list>
+      <button ion-button type="submit" [disabled]="!todo.valid">ACTUALIZAR </button>
+    </form>
+</ion-content>

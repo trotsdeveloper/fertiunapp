@@ -11,21 +11,22 @@ import { FincasProvider } from '../../../providers/fincas';
 export class DetailsFincasPage {
   private todo : FormGroup;
   public index;
+  public finca;
 
   constructor(public navCtrl: NavController, private formBuilder: FormBuilder, public fincasService: FincasProvider, public navParams: NavParams ) {
-
-    let finca = this.fincasService.get(this.index);
     this.index = navParams.get("index");
+    console.log(this.index);
+    this.finca = this.fincasService.get(this.index);
     this.todo = this.formBuilder.group({      
-      nombre: [finca.nombre, Validators.required],
-      departamento: [finca.departamento, Validators.required],
-      municipio: [finca.municipio, Validators.required],
-      corregimiento: [finca.corregimiento, Validators.required],
-      vereda: [finca.vereda, Validators.required],
-      clima: [finca.clima, Validators.required],
-      altitud: [finca.altitud],
-      temperaturaMedia: [finca.temperaturaMedia],
-      precipitacionMedia: [finca.precipitacionMedia],
+      nombre: [this.finca.nombre, Validators.required],
+      departamento: [this.finca.departamento, Validators.required],
+      municipio: [this.finca.municipio, Validators.required],
+      corregimiento: [this.finca.corregimiento, Validators.required],
+      vereda: [this.finca.vereda, Validators.required],
+      clima: [this.finca.clima, Validators.required],
+      altitud: [this.finca.altitud],
+      temperaturaMedia: [this.finca.temperaturaMedia],
+      precipitacionMedia: [this.finca.precipitacionMedia],
     });
   }
 }
