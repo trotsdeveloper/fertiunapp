@@ -7,7 +7,13 @@
  
  
 <ion-content padding>
-  ¿Esta seguro de eliminar la finca con nombre {{ name }}?
+  <ion-grid>
+<ion-row>
+  ¿Esta seguro de eliminar la finca "{{name}}"?
+  </ion-row>
+  <ion-row>
 <button ion-button (click)='delete()'>Eliminar</button>
 <button ion-button (click)='back()'>Cancelar</button>
+</ion-row>
+</ion-grid>
  </ion-content>

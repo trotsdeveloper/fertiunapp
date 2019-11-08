@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { FincasPage } from '../fincas/listarFincas/fincas'
+import { FincasPage } from '../fincas/listarFincas/fincas';
+import { LotesPage }
 
 @Component({
   selector: 'page-home',
@@ -15,6 +16,14 @@ export class HomePage {
     console.log("Fincas");
     this.navCtrl.push(FincasPage);
   }
+
+  lotes() {
+    console.log("Lotes");
+    this.navCtrl.push(LotesPage);
+
+  }
+
+
   analisisSuelos() {
     console.log("Analisis de suelos");
   }

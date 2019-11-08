@@ -36,9 +36,10 @@ export class FincasPage {
 
   }
   delete(i) {
+    this.fincas = this.fincasService.getAll();
     this.navCtrl.push(DeleteFincasPage, {
       index: i,
-      name: this.fincas[i].name,
+      name: this.fincas[i].nombre,
     });
     
   }
