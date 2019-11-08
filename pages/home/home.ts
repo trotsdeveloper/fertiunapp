@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FincasPage } from '../fincas/listarFincas/fincas';
-import { LotesPage }
+import { LotesPage } from '../lotes/listarLotes/lotes';
 
 @Component({
   selector: 'page-home',
