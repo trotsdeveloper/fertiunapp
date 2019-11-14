@@ -13,6 +13,9 @@ import { UpdateFincasPage} from '../pages/fincas/updateFincas/updateFincas';
 import { DeleteFincasPage} from '../pages/fincas/deleteFincas/deleteFincas';
 import { LotesPage} from '../pages/lotes/listarLotes/lotes';
 import { AddLotesPage } from '../pages/lotes/addLotes/addLotes';
+import { DetailsLotesPage } from '../pages/lotes/detailsLotes/detailsLotes';
+import { UpdateLotesPage } from '../pages/lotes/updateLotes/updateLotes';
+import { DeleteLotesPage } from '../pages/lotes/deleteLotes/deleteLotes';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,10 @@ import { AddLotesPage } from '../pages/lotes/addLotes/addLotes';
     UpdateFincasPage,
     DeleteFincasPage,
     LotesPage,
+    AddLotesPage,
+    DetailsLotesPage,
+    UpdateLotesPage,
+    DeleteLotesPage,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +46,7 @@ import { AddLotesPage } from '../pages/lotes/addLotes/addLotes';
     UpdateFincasPage,
     DeleteFincasPage,
     LotesPage,
+    
   ],
   providers: [
     FincasProvider,
