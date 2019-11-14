@@ -1,7 +1,7 @@
 export class Lote {
   cultivo: string;
  variedad: string;
-	edad: string;
+	edad: num;
   municipio: string;
 	corregimiento: string;
 	vereda: string;

@@ -20,7 +20,7 @@ export class LotesProvider {
       this.lotes.push(lote);
     }
 
-    update(index, lotes) {
+    update(index, lote) {
       this.lotes[index] = lote;
     }
 
