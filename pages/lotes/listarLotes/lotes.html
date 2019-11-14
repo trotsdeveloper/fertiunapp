@@ -1,0 +1,51 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Lotes</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content class="lotes-list-content" padding>
+	
+	<ion-grid>
+		<ion-item *ngFor="let lote of lotes; let i = index">
+      <ion-row>
+				<ion-col class="ion-no-margin">
+					<div align="center">
+          <ion-avatar>
+          <img src="{{lote.imageUrl}}">
+          </ion-avatar> 
+          </div>  
+				</ion-col>
+				<ion-col>
+					Lote {{ i+1 }}
+				</ion-col>
+        <ion-col>
+          Cultivo: {{ lote.cultivo }},
+          Variedad: {{ lote.variedad }}
+        </ion-col>
+    </ion-row>
+			<div class="item-note" item-end>
+        <button ion-button clear (click)="details(i)">
+					<ion-icon name="eye"></ion-icon>
+				</button>
+				<button ion-button clear (click)="update(i)">
+					<ion-icon name="create"></ion-icon>
+				</button>
+				<button ion-button clear (click)="delete(i)">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+			</div>
+		</ion-item>
+    <ion-row>
+    <ion-col (click)="add()">
+          <div align="center">
+          <ion-avatar>
+          <img src="https://i.ibb.co/zJW6Z3n/add-new.png">
+          </ion-avatar>
+          <p>AGREGAR LOTE</p>  
+          </div>               
+    </ion-col>
+
+    </ion-row>
+	</ion-grid>
+  
+</ion-content>
