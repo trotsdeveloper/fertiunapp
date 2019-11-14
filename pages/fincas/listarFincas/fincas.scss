@@ -2,15 +2,14 @@
   p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-
     font-size: 12px;
   }
-  background-image: url("https://i.ibb.co/G2f96V7/Fondo-2.png");
+  background-image: url("https://i.ibb.co/YNwK95G/Fondo-2.jpg");
    background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
   .btnImg {
-    width: 10vh;
+    width: 10vw;
     }  
 
     ion-icon {
@@ -31,6 +30,13 @@
 
   height:5vh;
 }
+
+.valign-middle { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .fincas-footer {
   background-image: url("https://i.ibb.co/pPZFJnj/footer.png");
   background-position: center; /* Center the image */

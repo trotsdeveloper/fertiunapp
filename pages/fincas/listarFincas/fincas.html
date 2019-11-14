@@ -1,6 +1,6 @@
-<ion-header class="fincas-header" padding>
+<ion-header class="fincas-header">
 </ion-header>
-<ion-content class="fincas-list-content" padding>
+<ion-content class="fincas-list-content" >
 	
 	<ion-grid>
     <ion-row class="fincaGrid">
@@ -15,7 +15,11 @@
           </div>  
 				</ion-col>
 				<ion-col col-7>
+          <div class="valign-middle">
+          <p>
 					{{ finca.nombre }}
+          </p>
+          </div>
 				</ion-col>
         <ion-col col-1>
         <button ion-button outline icon-only  small (click)="details(i)">
@@ -31,7 +35,7 @@
 				<button ion-button outline icon-only  small (click)="delete(i)">
 					<ion-icon name="trash"></ion-icon>
 				</button>
-      </ion-col>
+        </ion-col>
 
     </ion-row>
 		</ion-item>
@@ -54,7 +58,6 @@
           <p>AGREGAR FINCA</p>  
           </div>               
     </ion-col>
-
     </ion-row>
 	</ion-grid>
   

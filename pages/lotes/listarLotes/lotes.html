@@ -15,10 +15,12 @@
           </div>  
 				</ion-col>
         <ion-col col-7>
+          <div class="valign-middle">
           <p>
           Cultivo:  {{ lote.cultivo }}, <br>
           Variedad: {{ lote.variedad }}
           </p>
+          </div>
         </ion-col>
         <ion-col col-1>
         <button ion-button outline icon-only  small (click)="details(i)">
@@ -35,7 +37,7 @@
 					<ion-icon name="trash"></ion-icon>
 				</button>
       </ion-col>
-    </ion-row>
+      </ion-row>
 		</ion-item> 
     </ion-grid>  
     </ion-row> 

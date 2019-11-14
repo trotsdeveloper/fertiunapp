@@ -9,7 +9,7 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
     .btnImg {
-    width: 10vh;
+    width: 10vw;
     }  
 
     ion-icon {
@@ -22,6 +22,13 @@
       height:20vh;
     }
 }
+
+.valign-middle { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lotes-header {
   background-image: url("https://i.ibb.co/MPFkXjh/fertiun.png");
  background-position: center; /* Center the image */
