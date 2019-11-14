@@ -46,7 +46,10 @@ import { DeleteLotesPage } from '../pages/lotes/deleteLotes/deleteLotes';
     UpdateFincasPage,
     DeleteFincasPage,
     LotesPage,
-    
+    AddLotesPage,
+    DetailsLotesPage,
+    UpdateLotesPage,
+    DeleteLotesPage,
   ],
   providers: [
     FincasProvider,
