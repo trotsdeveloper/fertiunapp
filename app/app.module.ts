@@ -12,6 +12,7 @@ import { DetailsFincasPage} from '../pages/fincas/detailsFincas/detailsFincas';
 import { UpdateFincasPage} from '../pages/fincas/updateFincas/updateFincas';
 import { DeleteFincasPage} from '../pages/fincas/deleteFincas/deleteFincas';
 import { LotesPage} from '../pages/lotes/listarLotes/lotes';
+import { AddLotesPage } from '../pages/lotes/addLotes/addLotes';
 
 @NgModule({
   declarations: [

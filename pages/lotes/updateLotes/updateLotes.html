@@ -1,0 +1,32 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Actualizar lote</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+<form [formGroup]="todo" (ngSubmit)="logForm()">
+  <ion-list>
+      <ion-item>
+        <ion-label>Cultivo (*) </ion-label>
+        <ion-input type="text" formControlName="cultivo" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Variedad </ion-label>
+        <ion-input type="text" formControlName="variedad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Edad del cultivo (*) (meses) </ion-label>
+        <ion-input type="number" formControlName="edad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Distancia entre plantas (m) </ion-label>
+        <ion-input type="number" formControlName="distanciaEntrePlantas"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Distancia entre surcos (m) </ion-label>
+        <ion-input type="number" formControlName="distanciaEntreSurcos"></ion-input>
+      </ion-item>
+      </ion-list>
+      <button ion-button type="submit" [disabled]="!todo.valid">AGREGAR </button>
+    </form>
+</ion-content>
