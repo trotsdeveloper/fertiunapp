@@ -1,9 +1,9 @@
-<ion-header class="home-header" padding>
-			<img  src="https://i.ibb.co/MPFkXjh/fertiun.png" >
-    </ion-header>
+<ion-header class="fincas-header" padding>
+</ion-header>
 <ion-content class="fincas-list-content" padding>
 	
 	<ion-grid>
+    <ion-row class=""
 		<ion-item *ngFor="let finca of fincas; let i = index">
       <ion-row>
 				<ion-col class="ion-no-margin">
@@ -30,10 +30,18 @@
 			</div>
 		</ion-item>
     <ion-row>
+      <ion-col (click)="goBack()">
+        <div align="center">
+          <ion-avatar>
+          <img class="btnImg" src="https://i.ibb.co/2vYqhVP/lotes.png">
+          </ion-avatar>
+          <p>ATRAS</p>  
+          </div> 
+      </ion-col>
     <ion-col (click)="add()">
           <div align="center">
           <ion-avatar>
-          <img src="https://i.ibb.co/zJW6Z3n/add-new.png">
+          <img class="btnImg" src="https://i.ibb.co/zJW6Z3n/add-new.png">
           </ion-avatar>
           <p>AGREGAR FINCA</p>  
           </div>               
@@ -43,3 +51,4 @@
 	</ion-grid>
   
 </ion-content>
+<ion-footer class="fincas-footer" padding></ion-footer>

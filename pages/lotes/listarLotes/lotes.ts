@@ -11,6 +11,7 @@ import { DeleteLotesPage } from '../deleteLotes/deleteLotes';
 @Component({
   selector: 'lotes',
   templateUrl: 'lotes.html',
+  styleUrls: ['./lotes.scss']
 })
 export class LotesPage {
   lotes = [];

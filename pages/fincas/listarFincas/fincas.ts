@@ -11,6 +11,7 @@ import { DeleteFincasPage } from '../deleteFincas/deleteFincas';
 @Component({
   selector: 'fincas',
   templateUrl: 'fincas.html',
+  styleUrls: ['./fincas.scss']
 })
 export class FincasPage {
   fincas = [];
